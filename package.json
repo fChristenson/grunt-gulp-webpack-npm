@@ -2,7 +2,7 @@
   "name": "grunt-gulp-webpack-npm",
   "version": "",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "npx nodemon server.js",
     "prestart": "npm run build",
     "build": "npx webpack",
     "build:watch": "npx webpack --watch"
