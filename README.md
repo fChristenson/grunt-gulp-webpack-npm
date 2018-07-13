@@ -48,6 +48,25 @@ but giving it a command so you don't have to type a lot to run it.
 This allows you to avoid Grunt and Gulp if you don't need them but still
 want to be able to run tasks.
 
+## Considerations
+
+Using Grunt and Gulp means that you are wrapping the underlying tools in an abstraction.
+
+This is only a good thing in 2 scenarios imo:
+
+1. You have A LOT of tasks or very complex tasks that you need to orchestrate
+2. You have several people and operating systems and you don't want to use shell specific commands
+
+It is often that I have found that I want to use the tool Grunt and Gulp is wrapping
+in a way that is not easy or sometimes possible through these tools so remember that
+using a wrapper has benefits and drawbacks.
+
+Using Npm scripts directly can sometimes force you to use shell commands and that is
+not a good thing if those commands are not supported by the operating system.
+
+Webpack can do a lot of the stuff the task runners can but often I find that people
+add so much to webpack that the bundling takes longer and longer over time.
+
 ## Conclusion
 
 Grunt and Gulp are tools you want to look at when you have many developers working
